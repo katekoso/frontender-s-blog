@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/normalize.css">
-    <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <title>Блог Дмитрия Валака></title>
-</head>
-
-<!---->
-
-<body>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
     <main>
         <!--Sidebar Daria 03/05/22-->
         <section class="welcome">
@@ -56,7 +52,27 @@
                 </div>
             </div>
         </section>
+        <form class="message-form">
+      <input
+        type="text"
+        class="message-form__input"
+        placeholder="Напишите что-нибудь"
+      />
+      <div class="message-form__buttons">
+        <button type="button" class="message-form__photo-button">
+          <object
+            data="./assets/images/photo-button.svg"
+            type="image/svg+xml"
+          ></object>
+        </button>
+        <button type="submit" class="message-form__send-button" value=" ">
+          <object
+            data="./assets/images/send-button.svg"
+            type="image/svg+xml"
+          ></object>
+        </button>
+      </div>
+    </form>
     </main>
-</body>
-
-</html>
+   </body>
+</html>  
