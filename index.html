@@ -15,41 +15,13 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
     />
-    <title>Блог Дмитрия Валака></title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <title>Блог Дмитрия Валака></title>
   </head>
   <body>
-    <header class="header">
-      <nav>
-        <ul class="topmenu">
-          <li><a href="/">Главная</a></li>
-          <li>
-            <a href="/" class="submenu-link">Статьи</a>
-            <ul class="submenu">
-              <li><a href="/">Создание сайтов</a></li>
-              <li><a href="/">Интернет-маркетинг</a></li>
-              <li><a href="/">Продвижение видео</a></li>
-            </ul>
-          </li>
-          <li><a href="/">Обо мне</a></li>
-          <li><a href="/">Реклама</a></li>
-          <li><a href="/">Профиль</a></li>
-          <li>
-            <input
-              type="text"
-              class="form-search"
-              name="search"
-              value
-              placeholder="Поиск по блогу"
-              autocomplete="off"
-            />
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
+    <div class="container">
       <!--Sidebar Daria 03/05/22-->
-      <section class="welcome">
+      <aside class="welcome">
         <div class="welcome__about-blogger">
           <div class="welcome__banner">
             <img src="assets/img/welcome-banner.png" alt="banner" />
@@ -84,29 +56,67 @@
             </div>
           </div>
         </div>
+      </aside>
+      <section class="main-content">
+        <header class="header">
+          <nav>
+            <ul class="topmenu">
+              <li><a href="/">Главная</a></li>
+              <li>
+                <a href="/" class="submenu-link">Статьи</a>
+                <ul class="submenu">
+                  <li><a href="/">Создание сайтов</a></li>
+                  <li><a href="/">Интернет-маркетинг</a></li>
+                  <li><a href="/">Продвижение видео</a></li>
+                </ul>
+              </li>
+              <li><a href="/">Обо мне</a></li>
+              <li><a href="/">Реклама</a></li>
+              <li><a href="/">Профиль</a></li>
+              <li>
+                <input
+                  type="text"
+                  class="form-search"
+                  name="search"
+                  value
+                  placeholder="Поиск по блогу"
+                  autocomplete="off"
+                />
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <main class="main">
+          <section class="content-container">
+            <!--Message Form Ekaterina 03/05/22-->
+            <form class="message-form">
+              <input
+                type="text"
+                class="message-form__input"
+                placeholder="Напишите что-нибудь"
+              />
+              <div class="message-form__buttons">
+                <button type="button" class="message-form__photo-button">
+                  <object
+                    data="./assets/images/photo-button.svg"
+                    type="image/svg+xml"
+                  ></object>
+                </button>
+                <button
+                  type="submit"
+                  class="message-form__send-button"
+                  value=" "
+                >
+                  <object
+                    data="./assets/images/send-button.svg"
+                    type="image/svg+xml"
+                  ></object>
+                </button>
+              </div>
+            </form>
+          </section>
+        </main>
       </section>
-      <!--Message Form Ekaterina 03/05/22-->
-      <form class="message-form">
-        <input
-          type="text"
-          class="message-form__input"
-          placeholder="Напишите что-нибудь"
-        />
-        <div class="message-form__buttons">
-          <button type="button" class="message-form__photo-button">
-            <object
-              data="./assets/images/photo-button.svg"
-              type="image/svg+xml"
-            ></object>
-          </button>
-          <button type="submit" class="message-form__send-button" value=" ">
-            <object
-              data="./assets/images/send-button.svg"
-              type="image/svg+xml"
-            ></object>
-          </button>
-        </div>
-      </form>
-    </main>
+    </div>
   </body>
 </html>

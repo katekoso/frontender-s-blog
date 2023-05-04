@@ -1,93 +1,9 @@
-body {
-    margin: 0;
-    background: #221f1f;
-}
-header {
-    background: #1c1c1c;
-    text-align: center;
-}
-header a {
-    text-decoration: none;
-    outline: none;
-    display: block;
-    transition: .3s ease-in-out;
-}
-nav {
-    display: table;
-    margin: 0 auto;
-}
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.topmenu:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-.topmenu > li {
-    width: 16%;
-    float: left;
-    position: relative;
-    font-family: 'Roboto', sans-serif;
-}
-.topmenu > li > a {
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 400;
-    color: white;
-    padding: 15px 30px;
-}
-.form-search {
-    background-color: #221f1f;
-    width: 300px;
-    float: inline-end;
-    margin: 15px;
-    border: none;
-}
-.topmenu li a:hover {
-    color: #3936e9; 
-}
-
-.submenu-link:after {
-    content: "\f107";
-    font-family: "FontAwesome";
-    color: white;
-    margin-left: 10px;
-}
-.submenu {
-    background: #3936e9;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    z-index: 5;
-    width: 180px;
-    opacity: 0;
-    transform: scaleY(0);
-    transform-origin: 0 0;
-    transition: .5s ease-in-out;
-}
-.submenu a {
-    color: white;
-    text-align: left;
-    padding: 12px 15px;
-    font-size: 14px;
-    border-bottom: 1px solid rgba(255,255,255,.1);
-}
-.submenu li:last-child a { 
-    border-bottom: none; 
-}
-
-.topmenu > li:hover .submenu {
-    opacity: 1;
-    transform: scaleY(1);
-}
 
 .welcome__about-blogger {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     max-width: 300px;
     width: 100%;
+    height: 100%;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -184,9 +100,107 @@ nav ul {
     cursor: pointer;
 }
 
-.welcome__button button:hover {
+.welcome__button button:hover, .message-form__send-button:hover {
     opacity: 0.8;
     transition: 0.5s all;
+}
+
+body {
+    margin: 0;
+    background: #221f1f;
+}
+
+.container {
+    display: flex;
+}
+
+header {
+    background: #1c1c1c;
+    text-align: center;
+    width: 79vw;
+}
+header a {
+    text-decoration: none;
+    outline: none;
+    display: block;
+    transition: .3s ease-in-out;
+}
+nav {
+    display: table;
+    margin: 0 auto;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.topmenu:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.topmenu > li {
+    width: 16%;
+    float: left;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+.topmenu > li > a {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    padding: 15px 30px;
+}
+.form-search {
+    background-color: #221f1f;
+    width: 300px;
+    float: inline-end;
+    margin: 15px;
+    border: none;
+}
+.topmenu li a:hover {
+    color: #3936e9; 
+}
+
+.submenu-link:after {
+    content: "\f107";
+    font-family: "FontAwesome";
+    color: white;
+    margin-left: 10px;
+}
+.submenu {
+    background: #3936e9;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 5;
+    width: 180px;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    transition: .5s ease-in-out;
+}
+.submenu a {
+    color: white;
+    text-align: left;
+    padding: 12px 15px;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.submenu li:last-child a { 
+    border-bottom: none; 
+}
+
+.topmenu > li:hover .submenu {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 3.5rem;
 }
 
 .message-form {
@@ -194,7 +208,7 @@ nav ul {
     align-items: center;
     justify-content: space-between;
     height: 8.5vh;
-    width: 55vw;
+    width: 70vw;
     background-color: #121212;
     box-shadow: 3px 8px 10px rgb(6, 6, 6);
 }
