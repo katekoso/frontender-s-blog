@@ -1,3 +1,4 @@
+
 .welcome__about-blogger {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     max-width: 300px;
@@ -120,8 +121,6 @@ body {
     margin: auto;
 }
 
-
-
 header {
     background: #1c1c1c;
     text-align: center;
@@ -152,14 +151,14 @@ nav ul {
     clear: both;
 }
 
-.topmenu>li {
+.topmenu > li {
     width: 16%;
     float: left;
     position: relative;
     font-family: 'Roboto', sans-serif;
 }
 
-.topmenu>li>a {
+.topmenu > li > a {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 400;
@@ -176,7 +175,7 @@ nav ul {
 }
 
 .topmenu li a:hover {
-    color: #3936e9;
+    color: #3936e9; 
 }
 
 .submenu-link:after {
@@ -212,6 +211,14 @@ nav ul {
 }
 
 .topmenu>li:hover .submenu {
+    border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.submenu li:last-child a { 
+    border-bottom: none; 
+}
+
+.topmenu > li:hover .submenu {
     opacity: 1;
     transform: scaleY(1);
 }
@@ -226,7 +233,6 @@ nav ul {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 400;
-
 }
 
 .stories-block__widget {
@@ -236,7 +242,6 @@ nav ul {
     max-width: 180px;
     width: 100%;
     background-size: cover;
-
 }
 
 .stories-block__widget p:first-child {
@@ -248,8 +253,6 @@ nav ul {
     padding: 50% 50% 5%;
     font-size: 0.7rem;
 }
-
-
 
 .content-container {
     display: flex;
@@ -298,8 +301,6 @@ input {
     padding: 0;
     border: none;
 }
-
-
 
 .message-form__photo-button {
     background-color: #EBEBEB;
