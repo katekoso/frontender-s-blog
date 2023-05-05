@@ -319,7 +319,10 @@ input {
     font-weight: 400;
 
 }
-
+time {
+   font: 0.7em sans-serif;
+   color: #828282;
+}
 .articles__elim-1,
 .articles__elim-2,
 .articles__elim-3,
