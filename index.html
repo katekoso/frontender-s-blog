@@ -7,116 +7,189 @@
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Блог Дмитрия Валака></title>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="container">
-      <!--Sidebar Daria 03/05/22-->
-      <aside class="welcome">
-        <div class="welcome__about-blogger">
-          <div class="welcome__banner">
-            <img src="assets/img/welcome-banner.png" alt="banner" />
-          </div>
-          <div class="welcome__foto">
-            <img src="assets/img/welcome-foto.png" alt="foto" />
-          </div>
-          <div class="welcome__blogger">
-            <p>Дмитрий Валак</p>
-            <span> блог front-end разработчика </span>
-            <div class="welcome__social-icons">
-              <a href="/">
-                <img src="assets/icon/main_instagram-svg.svg" alt="instagram" />
-              </a>
-              <a href="/">
-                <img src="assets/icon/main-vk-svg.svg" alt="vk" />
-              </a>
-              <a href="/">
-                <img src="assets/icon/main_pinterest.svg" alt="pinterest" />
-              </a>
+        <!--Sidebar Daria 03/05/22-->
+        <aside class="welcome">
+            <div class="welcome__about-blogger">
+                <div class="welcome__banner">
+                    <img src="assets/img/welcome-banner.png" alt="banner" />
+                </div>
+                <div class="welcome__foto">
+                    <img src="assets/img/welcome-foto.png" alt="foto" />
+                </div>
+                <div class="welcome__blogger">
+                    <p>Дмитрий Валак</p>
+                    <span> блог front-end разработчика </span>
+                    <div class="welcome__social-icons">
+                        <a href="/">
+                            <img src="assets/icon/main_instagram-svg.svg" alt="instagram" />
+                        </a>
+                        <a href="/">
+                            <img src="assets/icon/main-vk-svg.svg" alt="vk" />
+                        </a>
+                        <a href="/">
+                            <img src="assets/icon/main_pinterest.svg" alt="pinterest" />
+                        </a>
+                    </div>
+                    <div class="welcome__text">
+                        Front-end разработчик. Практик верстки сайтов. Созданием сайтов
+                        занимаюсь с 2012 года. Работал в нескольких ИТ компаниях и
+                        наработал более 10 000 часов в создании сайтов различной
+                        сложности.
+                    </div>
+                    <div class="line"></div>
+                    <div class="welcome__button">
+                        <button>Мои работы</button>
+                        <button>Написать мне</button>
+                    </div>
+                </div>
             </div>
-            <div class="welcome__text">
-              Front-end разработчик. Практик верстки сайтов. Созданием сайтов
-              занимаюсь с 2012 года. Работал в нескольких ИТ компаниях и
-              наработал более 10 000 часов в создании сайтов различной
-              сложности.
-            </div>
-            <div class="line"></div>
-            <div class="welcome__button">
-              <button>Мои работы</button>
-              <button>Написать мне</button>
-            </div>
-          </div>
+        </aside>
+        <div class="main-content">
+            <header class="header">
+                <nav>
+                    <ul class="topmenu">
+                        <li><a href="/">Главная</a></li>
+                        <li>
+                            <a href="/" class="submenu-link">Статьи</a>
+                            <ul class="submenu">
+                                <li><a href="/">Создание сайтов</a></li>
+                                <li><a href="/">Интернет-маркетинг</a></li>
+                                <li><a href="/">Продвижение видео</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/">Обо мне</a></li>
+                        <li><a href="/">Реклама</a></li>
+                        <li><a href="/">Профиль</a></li>
+                        <li>
+                            <input type="text" class="form-search" name="search" value placeholder="Поиск по блогу"
+                                autocomplete="off" />
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <main class="main">
+                <section class="stories">
+                    <div class="stories-block">
+                        <div class="stories-block__widget">
+                            <p>
+                                Отдыхаю на природе
+                            </p>
+                            <p>
+                                21.09.2020
+                            </p>
+                        </div>
+                        <div class="stories-block__widget">
+                            <p>
+                                Отдыхаю на природе
+                            </p>
+                            <p>
+                                21.09.2020
+                            </p>
+                        </div>
+                        <div class="stories-block__widget">
+                            <p>
+                                Отдыхаю на природе
+                            </p>
+                            <p>
+                                21.09.2020
+                            </p>
+                        </div>
+                        <div class="stories-block__widget">
+                            <p>
+                                Отдыхаю на природе
+                            </p>
+                            <p>
+                                21.09.2020
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="content-container">
+                    <!--Message Form Ekaterina 03/05/22-->
+                    <form class="message-form">
+                        <input type="text" class="message-form__input" placeholder="Напишите что-нибудь" />
+                        <div class="message-form__buttons">
+                            <button type="button" class="message-form__photo-button">
+                                <object data="/assets/icon/photo-button.svg" type="image/svg+xml"></object>
+                            </button>
+                            <button type="submit" class="message-form__send-button" value=" ">
+                                <object data="/assets/icon/send-button.svg" type="image/svg+xml"></object>
+                            </button>
+                        </div>
+                    </form>
+                </section>
+                <section class="main-text">
+                    <div class="main-text__articles">
+                        <div class="articles__elim-1">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis
+                                urna.
+                                Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at
+                                tincidunt arcu
+                                egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa.
+                                Egestas
+                                ornare vel volutpat.
+                            </p>
+                        </div>
+                        <div class="articles__elim-2">
+
+                            <img src="./assets/img/img-elim-2.jpg" alt="img">
+                            <h2>Как писать код быстро и безболезненно?</h2>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci
+                                turpis urna.
+                                Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at
+                                tincidunt
+                                arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed
+                                volutpat massa.
+                                Egestas ornare vel volutpat.</p>
+                        </div>
+                        <div class="articles__elim-3">
+                            <img src="./assets/img/img-elim-3.jpg" alt="img">
+                            <h2>Купил новый ноутбук за 150 000 руб</h2>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci
+                                turpis urna.
+                                Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at
+                                tincidunt
+                                arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed
+                                volutpat massa.
+                                Egestas ornare vel volutpat.</p>
+                            <div class="articles__footer">
+                                <div class="articles__footer-left">
+                                    <p>Data</p>
+                                    <p>create sites</p>
+                                </div>
+                                <div>
+                                    <button>read</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="articles__elim-4">
+                            <img src="./assets/img/img-elim-4.jpg" alt="img">
+                            <h2>Как я сходил на FrontEnd Conf 2021</h2>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci
+                                turpis urna.
+                                Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at
+                                tincidunt
+                                arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed
+                                volutpat massa.
+                                Egestas ornare vel volutpat.</p>
+                        </div>
+
+                </section>
+            </main>
+
         </div>
-      </aside>
-      <div class="main-content">
-        <header class="header">
-          <nav>
-            <ul class="topmenu">
-              <li><a href="/">Главная</a></li>
-              <li>
-                <a href="/" class="submenu-link">Статьи</a>
-                <ul class="submenu">
-                  <li><a href="/">Создание сайтов</a></li>
-                  <li><a href="/">Интернет-маркетинг</a></li>
-                  <li><a href="/">Продвижение видео</a></li>
-                </ul>
-              </li>
-              <li><a href="/">Обо мне</a></li>
-              <li><a href="/">Реклама</a></li>
-              <li><a href="/">Профиль</a></li>
-              <li>
-                <input
-                  type="text"
-                  class="form-search"
-                  name="search"
-                  value
-                  placeholder="Поиск по блогу"
-                  autocomplete="off"
-                />
-              </li>
-            </ul>
-          </nav>
-        </header>
-        <main class="main">
-          <section class="content-container">
-            <!--Message Form Ekaterina 03/05/22-->
-            <form class="message-form">
-              <input
-                type="text"
-                class="message-form__input"
-                placeholder="Напишите что-нибудь"
-              />
-              <div class="message-form__buttons">
-                <button type="button" class="message-form__photo-button">
-                  <object
-                    data="./assets/images/photo-button.svg"
-                    type="image/svg+xml"
-                  ></object>
-                </button>
-                <button
-                  type="submit"
-                  class="message-form__send-button"
-                  value=" "
-                >
-                  <object
-                    data="./assets/images/send-button.svg"
-                    type="image/svg+xml"
-                  ></object>
-                </button>
-              </div>
-            </form>
-          </section>
-        </main>
-      </div>
     </div>
-  </body>
+</body>
+
 </html>
