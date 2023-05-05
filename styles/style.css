@@ -115,7 +115,7 @@ body {
 }
 
 header {
-    background: #1c1c1c;
+    background: #0D0D0D;
     text-align: center;
     width: 79vw;
 }
@@ -149,28 +149,28 @@ nav ul {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 400;
-    color: white;
+    color: #FFFFFF;
     padding: 15px 30px;
 }
 .form-search {
-    background-color: #221f1f;
+    background-color: ##202020;
     width: 300px;
     float: inline-end;
     margin: 15px;
     border: none;
 }
 .topmenu li a:hover {
-    color: #3936e9; 
+    color: ##FFFFFF; 
 }
 
 .submenu-link:after {
     content: "\f107";
     font-family: "FontAwesome";
-    color: white;
+    color: #FFFFFF;
     margin-left: 10px;
 }
 .submenu {
-    background: #3936e9;
+    background: #3137C9;
     position: absolute;
     left: 0;
     top: 100%;
@@ -182,7 +182,7 @@ nav ul {
     transition: .5s ease-in-out;
 }
 .submenu a {
-    color: white;
+    color: #FFFFFF;
     text-align: left;
     padding: 12px 15px;
     font-size: 14px;
