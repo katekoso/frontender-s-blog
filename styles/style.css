@@ -327,6 +327,8 @@ time {
    font: 0.7em sans-serif;
    color: #828282;
    text-decoration: none;
+    width: 90%;
+    margin: auto;
 }
 .read {
    text-decoration: none;
