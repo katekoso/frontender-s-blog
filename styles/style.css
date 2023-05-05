@@ -126,7 +126,7 @@ header a {
     transition: .3s ease-in-out;
 }
 nav {
-    display: table;
+    display: inline-block; /*поменяла с табл на инлайн*/
     margin: 0 auto;
 }
 nav ul {
@@ -136,7 +136,7 @@ nav ul {
 }
 .topmenu:after {
     content: "";
-    display: table;
+    display: inline-block; /*поменяла с табл на инлайн*/
     clear: both;
 }
 .topmenu > li {
