@@ -323,6 +323,17 @@ time {
    font: 0.7em sans-serif;
    color: #828282;
 }
+.comments {
+   font: 0.7em sans-serif;
+   color: #828282;
+   text-decoration: none;
+}
+.read {
+   text-decoration: none;
+   display: flex;
+   justify-content: flex-end;
+   font: 0.8em sans-serif;
+}
 .articles__elim-1,
 .articles__elim-2,
 .articles__elim-3,
