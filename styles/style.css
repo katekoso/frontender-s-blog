@@ -212,13 +212,29 @@ nav ul {
 
 .stories-block__widget {
     background-color: #221f1f;
-    background-image: url(../assets/img/nature-png.png);
     color: #D2D2D2;
     max-width: 180px;
     width: 100%;
     background-size: cover;
 
 }
+
+.stories-block .stories-block__widget:first-child {
+    background-image: url(../assets/img/nature-png.png);
+}
+
+.stories-block .stories-block__widget:nth-child(2) {
+    background-image: url(../assets/images/stoty-2.png);
+}
+
+.stories-block .stories-block__widget:nth-child(3) {
+    background-image: url(../assets/images/story-3.png);
+}
+
+.stories-block .stories-block__widget:last-child {
+    background-image: url(../assets/images/story-4.png);
+}
+
 
 .stories-block__widget p:first-child {
     padding: 7% 0 30% 15%;
