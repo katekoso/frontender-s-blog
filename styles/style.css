@@ -127,6 +127,9 @@ body {
 }
 
 header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
     background: #0D0D0D;
     text-align: center;
     box-shadow: 0px 5px 22px rgba(0, 0, 0, 0.25);
@@ -165,7 +168,7 @@ nav ul {
 
 .topmenu>li>a {
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 400;
     color: #FFFFFF;
     padding: 15px 30px;
@@ -173,9 +176,9 @@ nav ul {
 
 .form-search {
     background-color: #202020;
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
     float: inline-end;
-
     border: none;
     padding: 10% 0 7% 5%;
 }
@@ -210,7 +213,7 @@ nav ul {
     color: #FFFFFF;
     text-align: left;
     padding: 12px 15px;
-    font-size: 14px;
+    font-size: 1rem;
     border-bottom: 1px solid rgba(255, 255, 255, .1);
 }
 
@@ -310,7 +313,6 @@ input {
 .message-form__buttons {
     display: flex;
     justify-content: space-between;
-    width: 7.5vw;
     margin-right: 1.5vw;
 }
 
@@ -330,12 +332,12 @@ input {
 }
 
 time {
-    font: 0.7em sans-serif;
+    font: 0.9em sans-serif;
     color: #828282;
 }
 
 .comments {
-    font: 0.7em sans-serif;
+    font: 0.9em sans-serif;
     color: #828282;
     text-decoration: none;
     width: 90%;
@@ -346,7 +348,13 @@ time {
     text-decoration: none;
     display: flex;
     justify-content: flex-end;
-    font: 0.8em sans-serif;
+    font: 0.9em sans-serif;
+    color: #107EFF;
+}
+
+.main-text__text,
+.articles__elim-3 {
+    padding: 1rem;
 }
 
 .articles__elim-1,
@@ -356,10 +364,15 @@ time {
     background-color: #202020;
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.35);
     border-radius: 5px;
-    padding: 1rem;
     margin-top: 2rem;
     text-align: left;
     font-size: 0.8rem;
+}
+
+.articles__elim-1,
+.articles__elim-2,
+.articles__elim-4 {
+    padding: 0;
 }
 
 .main-text__articles img {
