@@ -105,6 +105,7 @@
 }
 
 .welcome__button button:hover,
+.message-form__photo-button:hover,
 .message-form__send-button:hover {
     opacity: 0.8;
     transition: 0.5s all;
@@ -112,7 +113,7 @@
 
 body {
     margin: 0;
-    background: #221f1f;
+    background: #181818;
 }
 
 .container {
@@ -128,6 +129,7 @@ body {
 header {
     background: #0D0D0D;
     text-align: center;
+    box-shadow: 0px 5px 22px rgba(0, 0, 0, 0.25);
 }
 
 header a {
@@ -173,12 +175,15 @@ nav ul {
     background-color: #202020;
     width: 300px;
     float: inline-end;
-    margin: 15px;
+
     border: none;
+    padding: 10% 0 7% 5%;
 }
 
 .topmenu li a:hover {
     color: #FFFFFF;
+    opacity: 50%;
+    transition: 0.5s all;
 }
 
 .submenu-link:after {
@@ -225,8 +230,8 @@ nav ul {
     align-items: center;
     gap: 1rem;
     width: 70%;
-    background-color: #202020;
-    margin: 2rem auto;
+    background-color: #181818;
+    margin: 5rem auto 0;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
 }
@@ -239,6 +244,7 @@ nav ul {
     height: 195px;
     border-radius: 5px;
     background-size: cover;
+    filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.2));
 }
 
 .stories-block .stories-block__widget:first-child {
@@ -259,7 +265,7 @@ nav ul {
 
 
 .stories-block__widget p:first-child {
-    padding: 7% 0 30% 15%;
+    padding: 7% 0 45% 15%;
 
 }
 
@@ -281,6 +287,7 @@ nav ul {
     height: 8.5vh;
     width: 70%;
     background-color: #121212;
+    border-radius: 5px;
     box-shadow: 3px 8px 10px rgb(6, 6, 6);
 }
 
@@ -307,21 +314,10 @@ input {
     margin-right: 1.5vw;
 }
 
-.message-form__photo-button,
-.message-form__send-button {
-    border-radius: 50%;
-    width: 3vw;
-    height: 3vw;
-    padding: 0;
+.message-form button {
+    background-color: #121212;
     border: none;
-}
-
-.message-form__photo-button {
-    background-color: #EBEBEB;
-}
-
-.message-form__send-button {
-    background-color: #3137C9;
+    cursor: pointer;
 }
 
 .main-text__articles {
@@ -331,7 +327,6 @@ input {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 400;
-
 }
 
 time {
@@ -385,6 +380,10 @@ time {
     margin: auto;
 }
 
+.main-text span {
+    padding: 0 5px;
+}
+
 /* pagination */
 .pagination-nav {
     display: flex;
@@ -413,6 +412,7 @@ time {
 
 .pagination__item:hover {
     background: #104BE3;
+    transition: 0.2s all;
 }
 
 .pagination__link {
