@@ -413,46 +413,6 @@ a:hover {
     width: 100%;
 }
 
-.message-form {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 15px;
-    height: 8.5vh;
-    width: 70%;
-    background-color: #121212;
-    border-radius: 5px;
-    box-shadow: 3px 8px 10px rgb(6, 6, 6);
-}
-
-.message-form__input {
-    background-color: #121212;
-    height: 4vh;
-    width: 70%;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 2vh;
-    color: #D2D2D2;
-    margin-left: 2vw;
-}
-
-input {
-    outline: none;
-    border: none;
-}
-
-.message-form__buttons {
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
-    margin-right: 1.5vw;
-}
-
-.message-form button {
-    background-color: #121212;
-    border: none;
-    cursor: pointer;
-}
 
 .main-text__articles {
     color: #D2D2D2;
