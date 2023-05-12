@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/mainprofile.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="form-wrap">
+        <h1>Профиль</h1>
+    </div>
+    <form method="post" action="form.php">
+        <div>
+            <label for="name"></label>
+            <input type="text" name="name" required value placeholder="Имя Фамилия">
+        </div>
+        <div>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" required value placeholder="Электронная почта">
+        </div>
+        <div>
+            <label for="password">E-mail</label>
+            <input type="password" name="password" required value placeholder="Новый пароль">
+        </div>
+        <div>
+            <label for="confirm-password">E-mail</label>
+            <input type="confirm-password" name="confirm-password" required value placeholder="Подтвердите пароль">
+        </div>
+        <button type="submit">Сохранить</button>
+
+    </form>
+    <div class="avatar">
+        <img src="./assets/img/avatar.png" alt="avatar">
+    </div>
+    <a class="choose" href="/">выбрать аватар</a>
+
+</body>
+
+</html>
