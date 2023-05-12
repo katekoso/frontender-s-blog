@@ -7,8 +7,14 @@
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/styles/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/styles/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Блог Дмитрия Валака></title>
   </head>
@@ -54,32 +60,36 @@
       </aside>
       <div class="main-content">
         <header class="header">
-          <nav class="big-screen-nav">
-            <ul class="topmenu">
-              <li><a href="/">Главная</a></li>
-              <li>
-                <a href="/" class="submenu-link">Статьи</a>
-                <ul class="submenu">
-                  <li><a href="/">Создание сайтов</a></li>
-                  <li><a href="/">Интернет-маркетинг</a></li>
-                  <li><a href="/">Продвижение видео</a></li>
+          <div class="menu">
+            <div class="left">
+              <nav class="one">
+                <ul class="topmenu">
+                  <li><a href="#">ГЛАВНАЯ</a></li>
+                  <li>
+                    <a href="#">СТАТЬИ<i class="fa fa-angle-down"></i></a>
+                    <ul class="submenu">
+                      <li><a href="">Создание сайтов</a></li>
+                      <li><a href="">Интернет маркетинг</a></li>
+                      <li><a href="">Продвижение видео</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">ОБО МНЕ</a></li>
+                  <li><a href="#">РЕКЛАМА</a></li>
                 </ul>
-              </li>
-              <li><a href="/">Обо мне</a></li>
-              <li><a href="/">Реклама</a></li>
-              <li><a href="/">Профиль</a></li>
-              <li>
+              </nav>
+            </div>
+            <div class="right">
+              <div class="profile"><a href="/">ПРОФИЛЬ</a></div>
+              <div class="searh">
                 <input
                   type="text"
-                  class="form-search"
-                  name="search"
+                  class="searh-form"
                   value
                   placeholder="Поиск по блогу"
-                  autocomplete="off"
                 />
-              </li>
-            </ul>
-          </nav>
+              </div>
+            </div>
+          </div>
           <nav class="mobile-nav">
             <div class="nav-container">
               <input class="checkbox" type="checkbox" />
@@ -190,151 +200,35 @@
                   <time datetime="2020-06-21">21.06.2020</time>
                 </div>
               </div>
-              <div class="articles__elim-2">
-                <img src="./assets/img/img-elim-2.jpg" alt="img" />
-                <div class="main-text__text">
-                  <h2>Как писать код быстро и безболезненно?</h2>
-            </div>
-        </aside>
-        <div class="main-content">
-            <header>
-                <div class="menu">
-                    <div class="left">
-                        <nav class="one">
-                            <ul class="topmenu">
-                                <li><a href="#">ГЛАВНАЯ</a></li>
-                                <li><a href="#">СТАТЬИ<i class="fa fa-angle-down"></i></a>
-                                    <ul class="submenu">
-                                        <li><a href="">Создание сайтов</a></li>
-                                        <li><a href="">Интернет маркетинг</a></li>
-                                        <li><a href="">Продвижение видео</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">ОБО МНЕ</a></li>
-                                <li><a href="#">РЕКЛАМА</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="right">
-                        <div class="profile"><a href="/">ПРОФИЛЬ</a> </div>
-                        <div class="searh">
-                            <input type="text" class="searh-form" value placeholder="Поиск по блогу">
-                        </div>
-                    </div>
-                </div>
-            </header>
-            <main class="main">
-                <section class="stories">
-                    <div class="stories-block">
-                        <div class="stories-block__widget">
-                            <p>
-                                Отдыхаю на природе
-                            </p>
-                            <p>
-                                21.09.2020
-                            </p>
-                        </div>
-                        <div class="stories-block__widget">
-                            <p>
-                                Заканчиваю сложный проект
-                            </p>
-                            <p>
-                                15.09.2020
-                            </p>
-                        </div>
-                        <div class="stories-block__widget">
-                            <p>
-                                Переехал в новую квартиру
-                            </p>
-                            <p>
-                                11.09.2020
-                            </p>
-                        </div>
-                        <div class="stories-block__widget">
-                            <p>
-                                Осень пришла!
-                            </p>
-                            <p>
-                                28.08.2020
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                <section class="content-container">
-                    <!--Message Form Ekaterina 03/05/22-->
-                    <form class="message-form" method="post">
-                        <input type="text" class="message-form__input" placeholder="Напишите что-нибудь" />
-                        <div class="message-form__buttons">
-                            <button type="button" class="message-form__photo-button">
-                                <img src="./assets/images/photo-button.svg" alt="add-foto">
-                            </button>
-                            <button type="submit" class="message-form__send-button" value=" ">
-                                <img src="./assets/images/send-button.svg" alt="send-button">
-                            </button>
-                        </div>
-                    </form>
-                </section>
-                <section class="main-text">
-                    <div class="main-text__articles">
-                        <div class="articles__elim-1">
-                            <div class="main-text__text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci
-                                    turpis
-                                    urna.
-                                    Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at
-                                    tincidunt arcu
-                                    egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat
-                                    massa.
-                                    Egestas
-                                    ornare vel volutpat.
-                                </p>
-                                <time datetime="2020-06-21">21.06.2020</time>
-                            </div>
-                        </div>
-                        <div class="articles__elim-2">
 
-                            <img src="./assets/img/img-elim-2.jpg" alt="img">
-                            <div class="main-text__text">
-                                <h2>Как писать код быстро и безболезненно?</h2>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci
-                                    turpis urna.
-                                    Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at
-                                    tincidunt
-                                    arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed
-                                    volutpat massa.
-                                    Egestas ornare vel volutpat.</p>
-                                <time datetime="2020-06-21">21.06.2020</time><span>&bull;</span><a class="comments"
-                                    href="/website">создание
-                                    сайтов</a>
-                                <a class="read" href="/website">читать</a>
-                            </div>
-                        </div>
-                        <div class="articles__elim-3">
-                            <img src="./assets/img/img-elim-3.jpg" alt="img">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Elementum volutpat orci turpis urna. Et vestibulum, posuere
-                    tortor lacinia sit. Sagittis porttitor orci auctor in at
-                    tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor
-                    nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel
-                    volutpat.
-                  </p>
-                  <time datetime="2020-06-21">21.06.2020</time
-                  ><span>&bull;</span
-                  ><a class="comments" href="/website">создание сайтов</a>
-                  <a class="read" href="/website">читать</a>
-                </div>
-              </div>
+                <div class="articles__elim-2">
+                  <img src="./assets/img/img-elim-2.jpg" alt="img" />
+                  <div class="main-text__text">
+                    <h2>Как писать код быстро и безболезненно?</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Elementum volutpat orci turpis urna. Et vestibulum,
+                      posuere tortor lacinia sit. Sagittis porttitor orci auctor
+                      in at tincidunt arcu egestas. Fusce arcu sodales lacinia
+                      eu auctor nunc nam id. Diam sit sed volutpat massa.
+                      Egestas ornare vel volutpat.
+                    </p>
+                    <time datetime="2020-06-21">21.06.2020</time>
+                    <span>&bull;</span>
+                    <a class="comments" href="/website">создание сайтов</a>
+                    <a class="read" href="/website">читать</a>
+                  </div>
+                </div> 
               <div class="articles__elim-3">
                 <img src="./assets/img/img-elim-3.jpg" alt="img" />
-
+                <div class="main-text__text">
                 <h2>Купил новый ноутбук за 150 000 руб</h2>
                 <time datetime="2020-06-21">21.06.2020</time><span>&bull;</span
                 ><a class="comments" href="/video-marketing"
                   >продвижение видео</a
                 >
                 <a class="read" href="/website">оставить комментарий</a>
+                </div>
               </div>
               <div class="articles__elim-4">
                 <img src="./assets/img/img-elim-4.jpg" alt="img" />
@@ -379,6 +273,7 @@
           </nav>
           <!-- pagination -->
         </main>
+       </div>
       </div>
     </div>
   </body>

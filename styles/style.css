@@ -177,7 +177,7 @@ ul {
     margin-right: 0;
 }
 
-a {
+.menu a {
     display: block;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
@@ -396,6 +396,14 @@ input {
     font-weight: 400;
 }
 
+.main-text__text h2 {
+    padding: 0.3rem 0 0.8rem 0;
+}
+
+.main-text__text p {
+    margin-bottom: 1.3rem;
+}
+
 time {
     font: 0.9em sans-serif;
     color: #828282;
@@ -422,6 +430,10 @@ time {
     padding: 1rem;
 }
 
+.articles__elim-3 .main-text__text {
+    padding-bottom: 0;
+}
+
 .articles__elim-1,
 .articles__elim-2,
 .articles__elim-3,
@@ -432,6 +444,7 @@ time {
     margin-top: 2rem;
     text-align: left;
     font-size: 0.8rem;
+    line-height: 1.3rem;
 }
 
 .articles__elim-1,
@@ -445,8 +458,7 @@ time {
     width: 100%;
 }
 
-
-.articles__footer-left {
+/*.articles__footer-left {
     display: flex;
 
 }
@@ -456,7 +468,7 @@ time {
     justify-content: space-between;
     width: 90%;
     margin: auto;
-}
+}*/
 
 .main-text span {
     padding: 0 5px;
@@ -511,7 +523,7 @@ time {
         margin: 0;
         padding: 0;
     }    
- }
+}
 
 
 @media screen and (min-width:768px) and (max-width:1023px) {
@@ -524,9 +536,9 @@ time {
     }
 
     .message-form { 
-      width: 90%;
-      margin: 0;
-      padding: 0;
+        width: 90%;
+        margin: 0;
+        padding: 0;
     }
 
     .message-form__buttons {
@@ -538,7 +550,7 @@ time {
         display: none;
 
     }
-
+}
 /* mobile design */
 
 @media screen and (min-width: 768px) {
@@ -552,7 +564,7 @@ time {
     .message-form, 
     .stories-block .stories-block__widget:nth-child(3),
     .stories-block .stories-block__widget:last-child,
-    .big-screen-nav {
+    .menu {
         display: none;
     }
     .header {
