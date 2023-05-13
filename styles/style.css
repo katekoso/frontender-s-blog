@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+}
+
 header {
     background-color: black;
     max-width: 2550px;
@@ -182,7 +186,6 @@ ul {
     font-size: 1rem;
     font-weight: 500;
     padding: 10px 15px;
-    text-decoration: none;
     outline: none;
     transition: .5s linear;
     color: white;
@@ -551,7 +554,6 @@ time {
 
     .stories-block div:nth-child(4) {
         display: none;
-
     }
 }
 
@@ -564,7 +566,6 @@ time {
 }
 
 @media screen and (max-width: 767px) {
-
     .welcome,
     .message-form,
     .stories-block .stories-block__widget:nth-child(3),
