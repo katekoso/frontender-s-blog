@@ -347,7 +347,7 @@ a:hover {
     display: flex;
     justify-content: center;
     margin-top: 3.5rem;
-    max-width: 1023;
+    max-width: 1023px;
     width: 100%;
 }
 

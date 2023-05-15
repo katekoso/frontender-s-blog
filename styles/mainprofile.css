@@ -595,20 +595,49 @@ input[type="confirm-password"]:focus {
     margin: 20px auto;
     max-width: 550px;
     width: 100%;
+    padding: 30px;
+    color: #FFFFFF; 
+    margin-bottom: 35rem;
+
   }
 
   .profile,
   form {
     float: none;
     width: 100%;
+
+    padding: 10px 15px;
+    background: #181818;
+    color: #FFFFFF;
+    border-bottom: 1px solid #3F3F3F;
+   
+  
+  }
+  input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="confirm-password"]:focus {
+    box-shadow: 0px 1px 0 #107EFF;
+  }
+  .save__button {
+    background: #3137C9;
+    color: #FFFFFF;
+    width: 90px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: #3137C9;
+    font: 1em sans-serif;
+ }
+  .avatar {
+    display: flex;
+    align-items: center; 
+    margin-top: 100px; 
   }
 
   h1 {
     margin: auto;
     padding-bottom: 50px;
   }
-
   form {
     border-radius: 0 0 20px 20px;
   }
 }
+
