@@ -346,8 +346,7 @@ a:hover {
 .content-container {
     display: flex;
     justify-content: center;
-    margin-top: 3.5rem;
-    max-width: 1023px;
+    margin: 3.5rem auto 0;
     width: 100%;
 }
 
