@@ -515,7 +515,7 @@ time {
 
 @media screen and (max-width:1439px) {
     .message-form {
-        width: 90%;
+        width: 70%;
         margin: 0;
         padding: 0;
     }
@@ -532,7 +532,7 @@ time {
     }
 
     .message-form {
-        width: 90%;
+        width: 70%;
         margin: 0;
         padding: 0;
     }
@@ -577,7 +577,7 @@ time {
     }
 
     .nav-container .form-search {
-        font-size: 1.3rem;
+        font-size: 0.8rem;
         font-weight: 300;
         margin-left: 15rem;
         width: 60%;
