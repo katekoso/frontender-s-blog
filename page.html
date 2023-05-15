@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/styles/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./styles/page.css" />
+    <title>Блог Дмитрия Валака></title>
+  </head>
+
+  <body>
+    <div class="container">
+      <!--Sidebar Daria 03/05/22-->
+      <aside class="welcome">
+        <div class="welcome__about-blogger">
+          <div class="welcome__banner">
+            <img src="assets/img/welcome-banner.png" alt="banner" />
+          </div>
+          <div class="welcome__foto">
+            <img src="assets/img/welcome-foto.png" alt="foto" />
+          </div>
+          <div class="welcome__blogger">
+            <p>Дмитрий Валак</p>
+            <span> блог front-end разработчика </span>
+            <div class="welcome__social-icons">
+              <a href="/">
+                <img src="assets/icon/main_instagram-svg.svg" alt="instagram" />
+              </a>
+              <a href="/">
+                <img src="assets/icon/main-vk-svg.svg" alt="vk" />
+              </a>
+              <a href="/">
+                <img src="assets/icon/main_pinterest.svg" alt="pinterest" />
+              </a>
+            </div>
+            <div class="welcome__text">
+              Front-end разработчик. Практик верстки сайтов. Созданием сайтов
+              занимаюсь с 2012 года. Работал в нескольких ИТ компаниях и
+              наработал более 10 000 часов в создании сайтов различной
+              сложности.
+            </div>
+            <div class="line"></div>
+            <div class="welcome__button">
+              <button>Мои работы</button>
+              <button>Написать мне</button>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <div class="main-content">
+        <header class="header">
+          <div class="menu">
+            <div class="left">
+              <nav class="one">
+                <ul class="topmenu">
+                  <li><a href="/">ГЛАВНАЯ</a></li>
+                  <li>
+                    <a href="#">СТАТЬИ<i class="fa fa-angle-down"></i></a>
+                    <ul class="submenu">
+                      <li><a href="">Создание сайтов</a></li>
+                      <li><a href="">Интернет маркетинг</a></li>
+                      <li><a href="">Продвижение видео</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">ОБО МНЕ</a></li>
+                  <li><a href="#">РЕКЛАМА</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="right">
+              <div class="profile">
+                <a href="/mainprofile.html">ПРОФИЛЬ</a>
+              </div>
+              <div class="searh">
+                <input
+                  type="text"
+                  class="searh-form"
+                  value
+                  placeholder="Поиск по блогу"
+                />
+              </div>
+            </div>
+          </div>
+          <nav class="mobile-nav">
+            <div class="nav-container">
+              <input class="checkbox" type="checkbox" />
+              <div class="hamburger-lines">
+                <span class="hamburger_line line1"></span>
+                <span class="hamburger_line line2"></span>
+                <span class="hamburger_line line3"></span>
+              </div>
+              <input
+                type="text"
+                class="form-search"
+                name="search"
+                value
+                placeholder="Поиск по блогу"
+                autocomplete="off"
+              />
+              <div class="menu-items">
+                <div class="menu-items__banner">
+                  <img src="assets/images/mobile-banner.png" alt="banner" />
+                </div>
+                <div class="menu-items__photo">
+                  <img src="assets/images/mobile-avatar.png" alt="foto" />
+                </div>
+                <div class="menu-items__text">
+                  <p>Дмитрий Валак</p>
+                  <span> блог front-end разработчика </span>
+                </div>
+                <div class="menu-items__line"></div>
+                <ul class="menu-items__list">
+                  <li>
+                    <a href="#">Статьи</a>
+                    <ul>
+                      <li><a href="/">Создание сайтов</a></li>
+                      <li><a href="/">Интернет-маркетинг</a></li>
+                      <li><a href="/">Продвижение видео</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Обо мне</a></li>
+                  <li><a href="#">Реклама</a></li>
+                  <li><a href="/mainprofile.html">Профиль</a></li>
+                </ul>
+                <div class="welcome__button">
+                  <button>Мои работы</button>
+                  <button>Написать мне</button>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <section class="main-text">
+          <div class="main-text__articles">
+            <div class="link-page">
+              <div>
+                <a class="go-back" href="/">вернуться назад</a>
+              </div>
+              <div>
+                <a class="share" href="/"
+                  >поделиться<span> &emsp;</span
+                  ><img src="./assets/img/Vector1.png" width="15" alt="vector"
+                /></a>
+              </div>
+            </div>
+            <div class="articles__elim-5">
+              <div class="main-text__text">
+                <h2>Как писать код быстро и безболезненно?</h2>
+                <time datetime="2020-06-21">21.06.2020</time
+                ><span>&ensp; &bull;&ensp; </span
+                ><a class="comments" href="/">создание сайтов</a>
+              </div>
+              <div class="main-text__text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Elementum volutpat orci turpis urna. Et vestibulum, posuere
+                  tortor lacinia sit. Sagittis porttitor orci auctor in at
+                  tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor
+                  nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel
+                  volutpat. Lorem ipsum is a pseudo-Latin text used in web
+                  design, typography, layout, and printing in place of English
+                  to emphasise design elements over content. It's also called
+                  placeholder (or filler) text. It's a convenient tool for
+                  mock-ups. It helps to outline the visual elements of a
+                  document or presentation, eg typography, font, or layout.
+                  Lorem ipsum is mostly a part of a Latin text by the classical
+                  author and philosopher Cicero. Its words and letters have been
+                  changed by addition or are often inserted randomly to mimic
+                  the typographic appearence of European languages, as are
+                  digraphs not to be found in the original. In a professional
+                  context it often happens that private or corporate clients
+                  corder a publication to be made and presented with the actual
+                  content still not being ready. Think of a news blog that's
+                  filled with content hourly on the day of going live. However,
+                  reviewers tend to be distracted by comprehensible content,
+                  say, a random text copied from a newspaper or the internet.
+                  The are likely to focus on the text, disregarding the
+                  sixteenth century.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Elementum volutpat orci turpis urna. Et vestibulum, posuere
+                  tortor lacinia sit. Sagittis porttitor orci auctor in at
+                  tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor
+                  nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel
+                  volutpat.
+                </p>
+              </div>
+              <img src="./assets/img/page.jpg" alt="img" />
+              <div class="main-text__text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Elementum volutpat orci turpis urna. Et vestibulum, posuere
+                  tortor lacinia sit. Sagittis porttitor orci auctor in at
+                  tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor
+                  nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel
+                  volutpat.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!--Related posts-->
+          <section class="links">
+            <div class="links__line"></div>
+            <h3>Интересно почитать</h3>
+            <div class="links__items">
+              <div class="links__item">
+                <a class="links__item_yellow" href="/"
+                  >Как я сходил на FrontEnd Conf 2021</a
+                >
+                <time datetime="2020-06-21">21.06.2020</time>
+              </div>
+              <div class="links__item">
+                <a class="links__item_yellow" href="/">
+                  Как писать код быстро и ...
+                </a>
+                <time datetime="2020-06-21">21.06.2020</time>
+              </div>
+              <div class="links__item">
+                <a class="links__item_yellow" href="/">
+                  Купил новый ноутбук за 150 000 руб
+                </a>
+                <time datetime="2020-06-21">21.06.2020</time>
+              </div>
+              <div class="links__item">
+                <a class="links__item_yellow" href="/">
+                  Купил новый ноутбук за 150 000 руб
+                </a>
+                <time datetime="2020-06-21">21.06.2020</time>
+              </div>
+            </div>
+            <div class="links__line"></div>
+          </section>
+
+          <!--comments-->
+          <div class="comments-page-2">
+            <div class="discussions">
+              <p>Обсуждения</p>
+              <div class="discussion__text-input">
+                <input type="text" placeholder="Текст комментария" />
+              </div>
+              <button>Отправить</button>
+            </div>
+            <div class="comment-p2">
+              <div class="comment-p2__header">
+                <img
+                  src="./assets/images/comments-avatar-valak.png"
+                  alt="foto"
+                />
+                <div class="comment-p2__name">
+                  <p>Дмитрий Валак</p>
+                  <p>1 неделю назад</p>
+                </div>
+              </div>
+              <p class="comment-p2__text">
+                Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor
+                orci auctor in at tincidunt arcu egestas. Fusce arcu sodales
+                lacinia eu auctor nunc nam id. Diam sit sed volutpat massa.
+                Egestas ornare vel volutpat.
+              </p>
+              <p class="comment-p2__link">
+                <a href="#">ответить</a>
+              </p>
+            </div>
+            <div class="comment-p2">
+              <div class="comment-p2__header">
+                <img
+                  src="./assets/images/comments-avatar-johnny.png"
+                  alt="foto"
+                />
+                <div class="comment-p2__name">
+                  <p>Джонни</p>
+                  <p>1 неделю назад</p>
+                </div>
+              </div>
+              <p class="comment-p2__text">
+                Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor
+                orci auctor in at tincidunt arcu egestas. Fusce arcu sodales
+                lacinia eu auctor nunc nam id. Diam sit sed volutpat massa.
+                Egestas ornare vel volutpat.
+              </p>
+              <p class="comment-p2__link">
+                <a href="#">ответить</a>
+              </p>
+            </div>
+          </div>
+          <!--comments-->
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
