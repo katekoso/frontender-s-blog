@@ -15,6 +15,12 @@ body {
     background: #181818;
 }
 
+
+
+.main__page {
+    margin: 8rem 0;
+}
+
 .welcome__about-blogger {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     max-width: 300px;
@@ -592,10 +598,10 @@ time {
     }
 
     .stories-block__widget {
-    max-width: 175px;
-    width: 100%;
-    height: 230px;
-    font-size: 15px;
+        max-width: 175px;
+        width: 100%;
+        height: 230px;
+        font-size: 15px;
     }
 
     .main-text__articles {

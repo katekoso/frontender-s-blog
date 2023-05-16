@@ -2,6 +2,22 @@ a {
     text-decoration: none;
 }
 
+.welcome {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 100vh;
+}
+
+.main-content {
+    margin: 0 0 0 300px;
+}
+
+.main__page {
+    margin: 8rem 0;
+}
+
 .main-text {
     color: #D2D2D2;
     width: 70%;
@@ -119,8 +135,9 @@ a {
 }
 
 header {
+    position: fixed;
+    margin: 0;
     background-color: black;
-    max-width: 2550px;
 }
 
 body {
@@ -250,9 +267,7 @@ body {
 }
 
 .main-content {
-    max-width: 2550px;
-    width: 100%;
-    margin: auto;
+    width: 100vw;
 }
 
 * {
@@ -264,14 +279,17 @@ body {
 .menu {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     color: white;
-    max-width: 2550px;
-    width: 100%;
+    width: 100vw;
 }
 
 .left {
-    width: 100%;
-    margin: auto;
+    width: 45%;
+}
+
+.right {
+    width: 40%;
 }
 
 ul {
@@ -354,13 +372,11 @@ a:hover {
     display: flex;
     align-items: center;
     justify-items: center;
-    max-width: 500px;
-    width: 100%;
-    justify-content: space-around;
 }
 
 .search {
     margin: 0;
+    padding: 0 50px 0 0;
 }
 
 .search-form {
@@ -369,6 +385,7 @@ a:hover {
     font-size: 1rem;
     background-color: black;
     outline: none;
+    width: 200px;
 }
 
 .right p {
@@ -388,8 +405,7 @@ a:hover {
 }
 
 .profile {
-    padding: 18px 35px;
-    margin: auto;
+    padding: 18px 0;
 }
 
 .menu a {
@@ -421,9 +437,6 @@ a:hover {
     padding: 1rem 0;
 }
 
-.articles__elim-1,
-.articles__elim-2,
-.articles__elim-4,
 .articles__elim-5 {
     padding: 0;
 }
