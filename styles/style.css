@@ -588,6 +588,7 @@ time {
     .stories-block {
         margin: 5rem auto -1.5rem;
         width: 90%;
+        justify-content: space-evenly;
     }
 
     .stories-block__widget {
