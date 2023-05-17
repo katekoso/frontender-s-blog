@@ -577,7 +577,12 @@ time {
     }
 
     .header {
+        margin: 0;
         text-align: unset;
+    }
+
+    .main {
+        margin: 0;
     }
 
     .nav-container {
