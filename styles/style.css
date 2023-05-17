@@ -4,7 +4,11 @@ a {
 
 header {
     background-color: black;
-    max-width: 2550px;
+    position: fixed;
+    margin: 0 0 0 300px;
+    background-color: black;
+    width: 100vw;
+    z-index: 888;
 }
 
 body {
@@ -15,10 +19,16 @@ body {
     background: #181818;
 }
 
+.welcome {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 100vh;
+}
 
-
-.main__page {
-    margin: 8rem 0;
+.main {
+    margin: 8rem 0 0 300px;
 }
 
 .welcome__about-blogger {
@@ -139,9 +149,7 @@ body {
 }
 
 .main-content {
-    max-width: 2550px;
-    width: 100%;
-    margin: auto;
+    width: 100vw;
 }
 
 * {
@@ -153,14 +161,14 @@ body {
 .menu {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     color: white;
     max-width: 2550px;
     width: 100%;
 }
 
 .left {
-    width: 100%;
-    margin: auto;
+    width: 45%;
 }
 
 ul {
@@ -242,10 +250,7 @@ a:hover {
 .right {
     display: flex;
     align-items: center;
-    justify-items: center;
-    max-width: 500px;
-    width: 100%;
-    justify-content: space-around;
+    width: 40%;
 }
 
 .search {
@@ -278,7 +283,7 @@ a:hover {
 
 .profile {
     padding: 18px 35px;
-    margin: auto;
+    margin: 0;
 }
 
 .menu a {
