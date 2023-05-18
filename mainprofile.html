@@ -145,10 +145,15 @@
                 </div>
                 <button class="save__button" type="submit">Сохранить</button>
             </form>
-            <div class="avatar">
-                <img src="./assets/img/avatar.png" alt="avatar" />
+             <div class="avatar">
+                <img src="./assets/img/avatar.png" alt="avatar">
             </div>
-            <a class="choose" href="/">выбрать аватар</a>
+            <form method="post" enctype="multipart/form-data">
+                <label class="input-file">
+                    <input type="file" name="file">
+                    <span>Выбрать аватар</span>
+                </label>
+            </form>
         </div>
     </div>
 </body>
