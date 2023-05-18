@@ -361,12 +361,51 @@ input[type="confirm-password"]:focus {
   margin-top: 100px;
 }
 
-.choose {
-  padding: 12px;
-  font: 1em sans-serif;
-  color: #107EFF;
-  font-size: 14px;
-  text-decoration: underline;
+/*style file*/
+.input-file {
+	position: relative;
+	display: inline-block;
+}
+.input-file span {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+	text-decoration: underline;
+	font-size: 14px;
+	vertical-align: middle;
+	color: #107EFF;
+	text-align: center;
+	border-radius: 4px;
+	background-color: #202020;
+	line-height: 10px;
+	height: 30px;
+	padding: 10px 10px 20px;
+	box-sizing: border-box;
+	border: none;
+	margin: 0 0 0 20px;
+	transition: background-color 0.2s;
+}
+.input-file input[type=file] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+
+/* Hover/active */
+.input-file:hover span {
+	background-color: #3137C9;
+}
+.input-file:active span {
+	background-color: #2E703A;
+}
+
+/* Disabled */
+.input-file input[type=file]:disabled + span {
+	background-color: #eee;
 }
 
 @media screen and (min-width:768px) and (max-width:1023px) {
